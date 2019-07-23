@@ -1,0 +1,77 @@
+#page-container {
+    background-color: #f9f9f9;
+    color: #404040;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    height: 100%;
+    width: 100%;
+}
+
+#logo {
+    background-color: #f9f9f9;
+    color: #606060;
+    font-weight: 300;
+    padding-left: 8px;
+}
+
+#editor-container {
+    display: flex;
+}
+
+#editor-footer {
+    align-items: center;
+    color: #606060;
+    display: flex;
+    justify-content: center;
+    padding: 8px;   
+}
+
+html, body, #editor-container {
+    height: 100%;
+}
+
+.editor-component {
+    border: 0;
+}
+
+textarea.editor-component {
+    background-color: #fcfcfc;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Menlo, Monaco, 'Courier New', monospace;
+    line-height: inherit;
+    padding: 8px;
+    resize: none;
+    width: 100%;
+}
+
+canvas.editor-component {
+    background-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+    font-size: 14px;
+    padding: 8px;
+    text-decoration: underline;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#canvas-container {
+    display: flex;
+    flex-direction: column;
+}

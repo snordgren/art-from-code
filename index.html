@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Art</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div id="page-container">
+    <h1 id="logo">art from code</h1>
+    <div id="editor-container">
+      <textarea 
+        id="source-code-input"
+        class="editor-component" 
+        placeholder="Write code here" 
+        spellcheck="false" 
+        onkeyup="updateCanvas()">
+      </textarea>
+      <div id="canvas-container">
+          <canvas class="editor-component" id="editor-canvas"></canvas>
+      </div>
+    </div>
+  </div>
+  <script>
+    updateCanvas();
+    updateCanvas();
+  </script>
+</body>
+
+</html>
