@@ -1,4 +1,4 @@
-# art with code
+# art from code
 
 A project for generating art assets from JavaScript code using the Canvas API 
 in the browser. My use case is making simple assets for mobile games. 
