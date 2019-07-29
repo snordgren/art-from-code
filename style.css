@@ -1,5 +1,5 @@
 #page-container {
-    background-color: #f9f9f9;
+    background-color: #303030;
     color: #404040;
     display: flex;
     flex-direction: column;
@@ -11,8 +11,7 @@
 }
 
 #logo {
-    background-color: #f9f9f9;
-    color: #606060;
+    color: #c0c0c0;
     font-weight: 300;
     padding-left: 8px;
 }
@@ -35,15 +34,18 @@ html, body, #editor-container {
 
 .editor-component {
     border: 0;
+    margin-bottom: 8px;
+    margin-right: 8px;
 }
 
 textarea.editor-component {
-    background-color: #fcfcfc;
-    color: inherit;
+    background-color: #404040;
+    color: white;
     font-size: 14px;
     font-weight: 300;
     font-family: Menlo, Monaco, 'Courier New', monospace;
     line-height: inherit;
+    margin-left: 8px;
     padding: 8px;
     resize: none;
     width: 100%;
