@@ -17,6 +17,10 @@ function retrieveDrawContext(canvasSize) {
 
 function evalSource(ctx, canvasSize, src) {
 
+  const arcTo = (x1, y1, x2, y2, radius) => {
+    ctx.arcTo(x1, canvasSize - y1 - 1, x2, canvasSize - y2 - 1, radius);
+  }
+  
   const beginPath = () => {
     ctx.beginPath();
   }
@@ -40,6 +44,10 @@ function evalSource(ctx, canvasSize, src) {
   };
 
   const pi = Math.PI;
+
+  const quadraticCurveTo = (cpx, cpy, x, y) => {
+    ctx.quadraticCurveTo(cpx, canvasSize - cpy - 1, x, canvasSize - y - 1);
+  }
 
   const rect = (x, y, w, h) => {
     ctx.rect(x, canvasSize - y - h, w, h);
